@@ -64,7 +64,7 @@ class App extends Component {
           <p>
             <input
               type="text"
-              placeholder="Type the text here"
+              placeholder="Type the item name here"
               value={this.state.newItem}
               onChange={e => this.updateInput("newItem", e.target.value)}
             />
@@ -74,21 +74,23 @@ class App extends Component {
               Add
             </Button>
           </p>
-          <div className="Dot">
+          <div>
             {this.state.list.map(item => {
               return (
                 <>
+                <div className="Header">
                   <Toast
                     key={item.id}
                     show={this.state.show}
                     onClose={() => this.deleteItem(item.id)}
                   >
-                    <Toast.Header>
-                      <div className="col-sm-11">
+                    <Toast.Header >
+                      <div className="col-sm-10">
                       <strong className="itemvalue">{item.value}</strong>
                       </div>
                     </Toast.Header>
                   </Toast>
+                  </div>
                 </>
               );
             })}
