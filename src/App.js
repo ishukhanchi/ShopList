@@ -59,9 +59,11 @@ class App extends Component {
     return (
       <Container className="App">
         <Jumbotron>
+          <p className="Heading">
           <h1>Shopping list</h1>
-          <p>Add an Item!</p>
-          <p>
+          </p>
+          <p className="Heading2">Add an Item!</p>
+          <p className="Input">
             <input
               type="text"
               placeholder="Type the item name here"
@@ -70,7 +72,7 @@ class App extends Component {
             />
           </p>
           <p>
-            <Button variant="primary" onClick={() => this.handleClick()}>
+            <Button variant="danger" onClick={() => this.handleClick()}>
               Add
             </Button>
           </p>
