@@ -85,7 +85,7 @@ class App extends Component {
                     onClose={() => this.deleteItem(item.id)}
                   >
                     <Toast.Header >
-                      <div className="col-sm-10">
+                      <div className="col-sm-9">
                       <strong className="itemvalue">{item.value}</strong>
                       </div>
                     </Toast.Header>
