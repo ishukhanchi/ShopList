@@ -63,6 +63,7 @@ class App extends Component {
           <p className="Heading">
           <h1>Shopping list</h1>
           </p>
+          <hr className="Hr"/>
           <p className="Heading2">Add an Item!</p>
           <p className="Input">
             <input
