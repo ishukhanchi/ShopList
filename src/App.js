@@ -58,6 +58,7 @@ class App extends Component {
   render() {
     return (
       <Container className="App">
+        {/* <div className="Jumbotron"> */}
         <Jumbotron>
           <p className="Heading">
           <h1>Shopping list</h1>
@@ -88,7 +89,7 @@ class App extends Component {
                   >
                     <Toast.Header >
                       <div className="col-sm-9">
-                      <strong className="itemvalue">{item.value}</strong>
+                      <strong className="Itemvalue">{item.value}</strong>
                       </div>
                     </Toast.Header>
                   </Toast>

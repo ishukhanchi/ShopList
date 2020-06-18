@@ -4,6 +4,10 @@
   background-size: cover;
 }
 
+.Jumbotron {
+  background-color: rgb(226, 226, 238);
+}
+
 .Dot {
   margin-left: 400px;
   /* display: inline-block; */
@@ -27,8 +31,23 @@
   color: #c3737b;
 }
 
-.Input {
-  color: #c3737b;
+input {
+  background-repeat:repeat-x;
+  border: 0px solid;
+  height:25px;
+  width:300px;
+  text-align: center;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(128, 132, 163);
+  opacity: 1; /* Firefox */
+  font-family: monospace;
+}
+
+.Itemvalue {
+  font-family: monospace;
+  color: rgb(128, 132, 163);
 }
 
 .Header {
@@ -42,4 +61,5 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  text-decoration: rgb(77, 81, 119);
 }
