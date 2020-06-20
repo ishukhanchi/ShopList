@@ -47,7 +47,7 @@ class App extends Component {
     });
   }
   toggleShow = value => {
-    this.setState({ show: value });
+    this.setState({ show: true });
   };
 
   handleClick = () => {
